@@ -13,8 +13,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "SCC",
-  description: "Sistema de cadastro de cliente",
+  title: "SCC - Sistema de Cadastro de Clientes",
+  description: "Sistema para cadastro de clientes via WhatsApp",
+  icons: {
+    icon: "/location.ico",        // Ícone padrão (16x16 ou 32x32)
+    shortcut: "/location.ico",    // Ícone alternativo
+    apple: "/logo.png",    // Ícone para dispositivos Apple (180x180)
+  },
 };
 
 export default function RootLayout({
@@ -23,7 +28,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="pt">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
